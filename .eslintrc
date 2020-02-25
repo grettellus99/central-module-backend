@@ -1,0 +1,37 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "object-curly-newline": "off",
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": false
+      }
+    ],
+    "consistent-return": "off",
+    "curly": [
+      "error",
+      "all"
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "tests/**"
+        ]
+      }
+    ],
+    "max-len": ["off"],
+    "no-underscore-dangle": "off",
+    "no-warning-comments": "warn",
+    "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before"} }]
+  }
+}

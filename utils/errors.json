@@ -1,0 +1,10 @@
+{
+    "roles": {
+        "alreadyExists": "Ya existe un rol con ese nombre",
+        "notFound": "No se encontró el rol"
+    },
+    "entitlements": {
+        "alreadyExists": "Ya existe un permiso con ese nombre",
+        "hasChildren": "El permiso todavia tiene descendientes"
+    }
+}
