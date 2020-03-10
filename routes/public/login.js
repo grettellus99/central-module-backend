@@ -15,9 +15,9 @@ function parseResponse(dn) {
 
 const loginHandler = async (ctx, next) => {
   const { smAccountName, password } = ctx.request.body;
-  // const { data } = await ldapAuth(smAccountName, password);
+   const { data } = await ldapAuth(smAccountName, password);
 
-  // ctx.assert(data.code === 200, 'Invalid Credentials');
+  ctx.assert(data.code === 200, 'Invalid Credentials');
 
   let user = await User.findOne({ smAccountName }).populate('roles').populate('entitlements');
 
